@@ -50,7 +50,7 @@ export default series(
   parallel(
     runTask('buildModules'),
     runTask('buildFullBundle'),
-    runTask('generateTypesDefinitions'),
+    runTask('generateTypesDefinitions --max-old-space-size=4096'),
     runTask('buildHelper'),
     series(
       withTaskName('buildThemeChalk', () =>

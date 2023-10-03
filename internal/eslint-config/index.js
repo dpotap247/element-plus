@@ -84,7 +84,7 @@ module.exports = defineConfig({
               'config',
               'overrides',
               'pnpm',
-              'husky',
+              // 'husky',
               'lint-staged',
               'eslintConfig',
             ],
